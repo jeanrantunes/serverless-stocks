@@ -40,7 +40,7 @@ jobs:
           zip -r9 ../../../../function.zip .
 
       - name: Add App to Zip file
-        run: cd ./app && zip -g ../api.zip -r .
+        run: zip -g ./function.zip -r app
 
       - name: Upload zip file artifact
         uses: actions/upload-artifact@v2
